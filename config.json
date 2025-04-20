@@ -1,0 +1,6 @@
+{
+    "username": "admin",
+    "password": "1234",
+    "port": 8501,
+    "debug": false
+  }

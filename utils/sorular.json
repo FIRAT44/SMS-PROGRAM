@@ -1,0 +1,32 @@
+[
+  {
+    "soru": "Olay Yeri/ Scene of Incident",
+    "tip": "text_input",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Uçak Tipi",
+    "tip": "selectbox",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ],
+    "secenekler": [
+      "DA20",
+      "DA42-TDI",
+      "DA42-NG",
+      "SONACA-S201",
+      "ZLIN-Z-242L",
+      "CUSTOMER"
+    ]
+  }
+]
