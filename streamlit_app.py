@@ -1,17 +1,19 @@
-from utils.auth import login_required  # Giriş kontrolü, her şeyden önce gelmeli
-login_required()  # Giriş yapılmadıysa sayfa burada durur
-
-# Giriş yapıldıysa aşağıdan sonrası görünür
 import streamlit as st
-from utils.db_setup import initialize_database
-
-initialize_database()
 
 st.set_page_config(page_title="Ayjet SMS Programı ✈️", layout="wide")
 
-st.title("Ayjet Uçuş Okulu SMS Programı ✈️")
-st.markdown("""
-Bu uygulama, Emniyet Yönetim Sistemi kapsamındaki raporlar, denetimler ve takip süreçlerini kolaylaştırmak amacıyla geliştirilmiştir.
+from utils.auth import login_required, get_user_role
 
-👈 Soldaki menüden bir sayfa seçerek başlayabilirsiniz.
-""")
+# Giriş kontrolü
+user = login_required()
+if not user:
+    st.stop()
+
+email = user["email"]
+rol = get_user_role(email)
+st.session_state["rol"] = rol
+
+st.sidebar.success(f"👋 {email}")
+
+
+

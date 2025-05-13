@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SMS Giriş | Firebase ID Token Oluştur</title>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+</head>
+<body>
+  <h2>🔐 SMS Giriş (E-Posta & Şifre)</h2>
+  <input type="email" id="email" placeholder="E-posta"><br><br>
+  <input type="password" id="password" placeholder="Şifre"><br><br>
+  <button onclick="girisYap()">Giriş Yap ve ID Token Al</button>
+  <p id="sonuc"></p>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBwSH_tKCStmN1PJ3FC7IeUVOnWZb8r2LA",
+      authDomain: "sms-project-17d1c.firebaseapp.com",
+      databaseURL: "https://sms-project-17d1c-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "sms-project-17d1c",
+      storageBucket: "sms-project-17d1c.firebasestorage.app",
+      messagingSenderId: "381369286466",
+      appId: "1:381369286466:web:879cfcda8420ea19a7d2db"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    function girisYap() {
+      const email = document.getElementById("email").value;
+      const sifre = document.getElementById("password").value;
+
+      signInWithEmailAndPassword(auth, email, sifre)
+        .then((userCredential) => userCredential.user.getIdToken())
+        .then((token) => {
+          document.getElementById("sonuc").innerText = "✅ ID Token başarıyla oluşturuldu!\nToken otomatik kopyalandı.";
+          navigator.clipboard.writeText(token);
+        })
+        .catch((error) => {
+          document.getElementById("sonuc").innerText = "❌ Hata: " + error.message;
+        });
+    }
+
+    window.girisYap = girisYap;
+  </script>
+</body>
+</html>

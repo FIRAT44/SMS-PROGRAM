@@ -7,8 +7,7 @@ import tempfile
 import plotly.express as px
 import zipfile
 import os
-from utils.auth import login_required
-login_required()
+
 
 #st.set_page_config(page_title="📄 Emniyet ", layout="wide")
 #st.title(" Emniyet Toplantı Takip Sistemi")
@@ -145,7 +144,7 @@ def karar_pdf_olustur( atanan, durum, konu):
 
 conn.commit()
 
-st.set_page_config(page_title="🗕️ Emniyet Toplantı Takibi", layout="wide")
+
 st.title(":calendar: Emniyet Toplantı Takip Sistemi")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(["📋 Toplantı Yönetimi", "📝 Karar Ekleme","📎Karar Takibi", "📅 Takvim ve Tutanaklar", "⚙️ Ayarlar"])

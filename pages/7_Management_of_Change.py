@@ -5,8 +5,7 @@ import plotly.express as px
 from datetime import date
 from st_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode, GridUpdateMode
 from streamlit_echarts import st_echarts
-from utils.auth import login_required
-login_required()
+
 # — Yardımcı Fonksiyon —
 def parse_date(val):
     try:
@@ -82,7 +81,7 @@ if "priority" not in cols:
 conn.commit()
 
 # — Streamlit Konfigürasyonu —
-st.set_page_config(page_title="📝 DTF & Proje Yönetimi", layout="wide")
+
 st.title("📝 Değişiklik Talebi ve Proje Yönetimi")
 
 tabs = st.tabs([
