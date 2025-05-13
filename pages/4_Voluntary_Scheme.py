@@ -189,7 +189,7 @@ UPLOAD_KLASORU = "uploads/voluntary_ekler"
 os.makedirs(UPLOAD_KLASORU, exist_ok=True)
 
 st.set_page_config(page_title="📄 Voluntary Rapor İncelemesi", layout="wide")
-#goster_oturum_paneli()
+goster_oturum_paneli()
 st.title("📄 Voluntary Rapor İncelemesi")
 
 

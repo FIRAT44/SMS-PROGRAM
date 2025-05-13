@@ -7,7 +7,7 @@ from collections import Counter
 from utils.auth import require_login, goster_oturum_paneli
 from utils.firebase_db import db
 
-#goster_oturum_paneli()
+goster_oturum_paneli()
 
 st.title("📊 Emniyet Yönetim Sistemi Dashboard")
 

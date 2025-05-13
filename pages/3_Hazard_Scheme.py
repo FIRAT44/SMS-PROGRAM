@@ -6,7 +6,7 @@ import firebase_admin
 from firebase_admin import credentials, firestore
 from utils.auth import goster_oturum_paneli
 
-#goster_oturum_paneli()
+goster_oturum_paneli()
 st.title("⚠️ ICAO 9859 - Hazard Rapor Yönetimi")
 
 # 1) Firebase'i başlat
