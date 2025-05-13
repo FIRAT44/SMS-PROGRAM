@@ -9,3 +9,4 @@ xlsxwriter
 pyvis
 firestore
 firebase-admin
+google-cloud-firestore
