@@ -3,10 +3,30 @@ import requests
 import json
 import os
 from firebase_admin import firestore
-
+# 🔴 Firebase Admin SDK init için eklenenler
+import firebase_admin
+from firebase_admin import credentials, firestore
 
 FIREBASE_API_KEY = "AIzaSyBwSH_tKCStmN1PJ3FC7IeUVOnWZb8r2LA"
 USER_FILE = ".user_session.json"
+
+
+# Tek seferlik init
+def init_firebase():
+    if not firebase_admin._apps:
+        # 1) Lokal JSON anahtarıyla:
+        cred = credentials.Certificate("service_account.json")
+        firebase_admin.initialize_app(cred)
+        
+        # 🟢 Ya da Streamlit Cloud kullanıyorsan secrets.toml'dan oku:
+        # cred_dict = st.secrets["firebase"]
+        # cred = credentials.Certificate(cred_dict)
+        # firebase_admin.initialize_app(cred)
+
+    return firestore.client()
+
+# db nesnemizi hazırla
+db = init_firebase()
 
 def kaydet_user(user_data):
     with open(USER_FILE, "w") as f:
