@@ -9,7 +9,7 @@ import numpy as np
 
 # Kimlik doğrulama
 
-goster_oturum_paneli()
+#goster_oturum_paneli()
 
 st.title("📊 Çeyrek Bazlı Olay Dağılımı (Firebase)")
 

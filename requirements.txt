@@ -7,3 +7,5 @@ pyqt6-webengine
 plotly
 xlsxwriter
 pyvis
+firestore
+firebase-admin

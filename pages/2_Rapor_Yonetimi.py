@@ -9,7 +9,7 @@ import pandas as pd
 from utils.firestore_rapor import rapor_json_goster
 
 
-goster_oturum_paneli()
+#goster_oturum_paneli()
 st.title("📄 Rapor Yönetimi")
 
 # Rapor konuları sabitlenmişse yükle
