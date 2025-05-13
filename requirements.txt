@@ -8,3 +8,4 @@ plotly
 xlsxwriter
 pyvis
 firestore
+firebase-admin
