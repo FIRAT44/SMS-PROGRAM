@@ -3,8 +3,7 @@ import sqlite3
 import pandas as pd
 import plotly.express as px
 import io
-from utils.auth import login_required
-#login_required()
+
 
 
 st.set_page_config(page_title="📊 SMS Dashboard", layout="wide")
