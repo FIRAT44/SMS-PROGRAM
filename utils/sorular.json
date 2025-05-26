@@ -1,0 +1,228 @@
+[
+  {
+    "soru": "Olay Yeri/ Scene of Incident",
+    "tip": "text_input",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Uçak Tipi ",
+    "tip": "text_input",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Uçak Tescili",
+    "tip": "text_input",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Olay daha önce raporlanmış mı",
+    "tip": "selectbox",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ],
+    "secenekler": [
+      "Evet",
+      "Hayır"
+    ]
+  },
+  {
+    "soru": "Olayın meydana geldiği uçuşun evresi",
+    "tip": "selectbox",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ],
+    "secenekler": [
+      "APRON-PARK",
+      "TWN",
+      "RWY",
+      "SID/STAR/Approach",
+      "Çalışma Sahası/Exercises Area",
+      "Seyrüsefer/Navigation",
+      "Diğer/Other"
+    ]
+  },
+  {
+    "soru": "Olay Detayı",
+    "tip": "text_area",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Olayın Muhtemel Sebebi",
+    "tip": "text_area",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Olayın Tekrarının Engellenmesi için Öneriler",
+    "tip": "text_area",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "Raporlayan Birim",
+    "tip": "selectbox",
+    "rapor_turu": "Voluntary",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ],
+    "secenekler": [
+      "Teknik Mühendislik",
+      "Teknik",
+      "SMS",
+      "CMS",
+      "Öğretmen Pilot",
+      "Öğrenci Pilot",
+      "Hezarfen SMS",
+      "Hezarfen Meydan",
+      "Müşteri",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "TEHLİKEYİ RAPORLAYANIN ADI",
+    "tip": "text_input",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "GERİ BİLDİRİM İSTEĞİ",
+    "tip": "text_input",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "TEHLİKENİN TANIMI",
+    "tip": "text_input",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "TEHLİKEYE BAĞLI RİSKLER",
+    "tip": "text_input",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "OLASI ETKİLERİ",
+    "tip": "text_input",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  },
+  {
+    "soru": "ŞİDDETİN OLASI ETKİLERİ",
+    "tip": "selectbox",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ],
+    "secenekler": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "soru": "OLASILIK",
+    "tip": "selectbox",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ],
+    "secenekler": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "soru": "TEHLİKENİN NEDENİ, EĞER BİLİNİYORSA: SİZCE BU TEHLİKE NEDEN MEVCUT",
+    "tip": "text_area",
+    "rapor_turu": "Hazard",
+    "konular": [
+      "Uçuş Operasyonu",
+      "Teknik",
+      "Meydan",
+      "Diğer"
+    ]
+  }
+]
