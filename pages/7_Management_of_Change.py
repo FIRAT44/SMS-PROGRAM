@@ -6,6 +6,9 @@ from datetime import date
 from st_aggrid import AgGrid, GridOptionsBuilder, DataReturnMode, GridUpdateMode
 from streamlit_echarts import st_echarts
 
+
+
+
 # — Yardımcı Fonksiyon —
 def parse_date(val):
     try:
@@ -81,7 +84,7 @@ if "priority" not in cols:
 conn.commit()
 
 # — Streamlit Konfigürasyonu —
-
+st.set_page_config(page_title="📝 DTF & Proje Yönetimi", layout="wide")
 st.title("📝 Değişiklik Talebi ve Proje Yönetimi")
 
 tabs = st.tabs([
